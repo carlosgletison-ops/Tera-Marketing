@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html class="light" lang="pt-BR">
+<head>
+    <meta charset="utf-8"/>
+    <link rel="icon" type="image/png" href="fav.png?v=1" />
+    <meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport" />
+    <title>Política de Privacidade | Tera Marketing</title>
+    
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-low": "#f3f4f5",
+            },
+            fontFamily: {
+              "headline": ["Inter", "sans-serif"],
+              "body": ["Inter", "sans-serif"],
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+        width: 100%;
+      }
+
+      html {
+        overflow-x: hidden;
+        width: 100%;
+      }
+
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        vertical-align: middle;
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+      /* Pulse Animations */
+      @keyframes pulse-green {
+        0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+        70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+        100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+      }
+      .whatsapp-btn { animation: pulse-green 2s infinite; }
+    </style>
+</head>
+<body class="bg-white text-zinc-900 overflow-x-hidden">
+
+    <!-- Mobile Overlay -->
+    <div id="mobile-overlay" class="fixed inset-0 bg-black/50 z-40 hidden md:hidden transition-opacity"></div>
+
+    <!-- SideNavBar Shell -->
+    <aside id="sidebar" class="fixed left-0 top-0 h-full w-64 bg-slate-50 flex flex-col p-6 z-50 border-r border-zinc-100 transform -translate-x-full md:translate-x-0 transition-transform duration-300 ease-in-out shadow-2xl md:shadow-none">
+        <button id="close-sidebar" class="md:hidden absolute top-6 right-6 text-zinc-500 hover:text-zinc-900">
+            <span class="material-symbols-outlined">close</span>
+        </button>
+        <div class="mb-12 mt-4 md:mt-0">
+            <a href="index.html" class="inline-block hover:opacity-80 transition-opacity">
+                <img src="logo.png" alt="Tera Marketing e Conteúdo" class="w-20 h-auto" />
+            </a>
+        </div>
+        <nav class="flex-1 space-y-2">
+            <a class="flex items-center gap-3 text-zinc-500 hover:text-zinc-900 px-4 py-3 hover:bg-zinc-200/50 transition-colors" href="index.html">
+                <span class="material-symbols-outlined">home</span>
+                <span class="font-inter tracking-tight">Página Inicial</span>
+            </a>
+            <a class="flex items-center gap-3 text-zinc-500 hover:text-zinc-900 px-4 py-3 hover:bg-zinc-200/50 transition-colors" href="portfolio.html">
+                <span class="material-symbols-outlined">grid_view</span>
+                <span class="font-inter tracking-tight">Portfólio</span>
+            </a>
+        </nav>
+        <div class="mt-auto">
+            <a href="https://wa.me/558899367945" target="_blank" class="w-full py-4 bg-zinc-900 text-white font-bold rounded-2xl flex items-center justify-center gap-2 hover:bg-zinc-800 transition-all hover:scale-[1.02]">
+                Iniciar Projeto
+            </a>
+        </div>
+    </aside>
+
+    <!-- Main Content Canvas -->
+    <main class="md:ml-64 min-h-screen transition-all duration-300 ml-0 relative">
+        <header class="sticky top-0 z-30 flex justify-between md:justify-end items-center px-6 md:px-8 py-4 bg-white/80 backdrop-blur-xl border-b border-zinc-100">
+            <button id="menu-toggle" class="md:hidden p-2 text-zinc-600 hover:text-zinc-900 transition-colors">
+                <span class="material-symbols-outlined text-3xl">menu</span>
+            </button>
+            <div class="flex items-center gap-4 md:gap-8 hidden sm:flex">
+                <a href="index.html" class="font-semibold text-zinc-500 hover:text-zinc-900 transition-colors">Voltar à Home</a>
+            </div>
+        </header>
+
+        <!-- Content Section -->
+        <article class="px-6 md:px-12 py-16 md:py-24 max-w-4xl mx-auto">
+            <div data-aos="fade-up">
+                <span class="text-xs uppercase tracking-widest font-black text-[#CCFF00] mb-4 inline-block">Transparência & Conformidade</span>
+                <h1 class="text-4xl md:text-6xl font-black tracking-tighter text-zinc-900 mb-12">Política de Privacidade</h1>
+                
+                <div class="prose prose-zinc prose-lg max-w-none text-zinc-600 leading-relaxed space-y-8">
+                    <section>
+                        <h2 class="text-2xl font-bold text-zinc-900 mb-4">1. Introdução</h2>
+                        <p>A Tera Marketing e Conteúdo valoriza a sua privacidade. Esta política descreve como coletamos, usamos e protegemos suas informações de acordo com a Lei Geral de Proteção de Dados (LGPD).</p>
+                    </section>
+
+                    <section>
+                        <h2 class="text-2xl font-bold text-zinc-900 mb-4">2. Coleta de Dados</h2>
+                        <p>Coletamos informações básicas como nome, e-mail e telefone apenas quando você entra em contato espontaneamente através de nossos canais de atendimento ou botões de conversão.</p>
+                    </section>
+
+                    <section>
+                        <h2 class="text-2xl font-bold text-zinc-900 mb-4">3. Uso das Informações</h2>
+                        <p>Os dados coletados são utilizados exclusivamente para:</p>
+                        <ul class="list-disc pl-6 space-y-2 mt-4">
+                            <li>Responder às suas solicitações de orçamento e consultoria.</li>
+                            <li>Enviar informações contratuais ou atualizações sobre projetos em andamento.</li>
+                            <li>Melhorar a experiência de navegação em nosso website.</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2 class="text-2xl font-bold text-zinc-900 mb-4">4. Segurança</h2>
+                        <p>Implementamos medidas técnicas e organizacionais para proteger seus dados contra acessos não autorizados ou destruição acidental. Suas informações nunca serão vendidas ou compartilhadas com terceiros para fins de marketing sem sua autorização explícita.</p>
+                    </section>
+
+                    <section>
+                        <h2 class="text-2xl font-bold text-zinc-900 mb-4">5. Seus Direitos</h2>
+                        <p>Você pode solicitar a qualquer momento a alteração, correção ou exclusão definitiva de seus dados de nossa base de contatos entrando em contato conosco.</p>
+                    </section>
+
+                    <div class="py-8 border-t border-zinc-100 flex items-center justify-between">
+                        <span class="text-sm font-mono text-zinc-400 uppercase tracking-widest leading-none">Última atualização: Março 2024</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Footer Shell Snippet -->
+        <footer class="px-6 md:px-12 py-12 flex flex-col md:flex-row justify-between items-center gap-6 bg-zinc-950 text-white relative z-30">
+            <div class="flex flex-col items-center md:items-start text-center md:text-left">
+                <a href="index.html" class="inline-block hover:opacity-80 transition-opacity mb-4">
+                    <img src="logo.png" alt="Tera Marketing e Conteúdo" class="w-16 h-auto invert" />
+                </a>
+                <p class="text-zinc-500 mt-2 text-sm max-w-sm">Estratégias de alto impacto para marcas que exigem mais visibilidade e resultados.</p>
+                <p class="font-mono text-zinc-600 mt-4 text-xs font-bold">© 2024 Tera Marketing. Todos os direitos reservados.</p>
+            </div>
+            <div class="flex flex-col md:flex-row gap-4 md:gap-8 items-center text-sm font-medium">
+                <a class="text-zinc-400 hover:text-[#CCFF00] transition-colors" href="index.html">Início</a>
+                <a class="text-zinc-400 hover:text-[#CCFF00] transition-colors" href="portfolio.html">Portfólio</a>
+                <div class="flex gap-4 bg-zinc-900 p-2 rounded-full">
+                    <a class="w-8 h-8 bg-zinc-800 rounded-full flex items-center justify-center text-white hover:bg-[#0077B5] hover:text-white transition-all shadow-sm" href="https://www.linkedin.com/in/tera-escrit%C3%B3rio-3186523b5/" target="_blank">
+                        <svg viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+                            <path d="M22.23 0H1.77C.8 0 0 .77 0 1.72v20.56C0 23.23.8 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.2 0 22.23 0zM7.12 20.45H3.56V9h3.56v11.45zM5.34 7.58c-1.14 0-2.06-.92-2.06-2.06 0-1.14.92-2.06 2.06-2.06 1.14 0 2.06.92 2.06 2.06 0 1.14-.92 2.06-2.06 2.06zM20.45 20.45h-3.56v-5.6c0-1.34-.03-3.06-1.87-3.06-1.87 0-2.15 1.46-2.15 2.96v5.7h-3.56V9h3.42v1.56h.05c.48-.9 1.63-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29z"/>
+                        </svg>
+                    </a>
+                    <a class="w-8 h-8 bg-zinc-800 rounded-full flex items-center justify-center text-white hover:bg-[#CCFF00] hover:text-black transition-all" href="https://www.instagram.com/teraescritorio/" target="_blank">
+                        <svg viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/558899367945" target="_blank"
+        class="fixed bottom-8 right-6 md:bottom-12 md:right-12 z-[9999] bg-[#25D366] text-white w-14 h-14 md:w-16 md:h-16 rounded-full shadow-2xl whatsapp-btn hover:scale-110 transition-all flex items-center justify-center cursor-pointer border-2 border-white"
+        style="display: flex !important;">
+        <svg viewBox="0 0 448 512" fill="white" class="w-7 h-7 md:w-8 md:h-8">
+            <path
+                d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-5.5-2.8-23.2-8.5-44.2-27.1-16.4-14.6-27.4-32.7-30.6-38.2-3.2-5.6-.3-8.6 2.5-11.3 2.5-2.5 5.6-6.5 8.3-9.8 2.8-3.3 3.7-5.6 5.6-9.3 1.9-3.7 1-7-0.5-9.8-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-0.2-6.9-0.2-10.6-0.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 13.2 5.7 23.5 9.2 31.6 11.8 13.3 4.2 25.4 3.6 35 2.2 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+        </svg>
+    </a>
+
+    <!-- Initialization Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true, offset: 50 });
+
+        const sidebar = document.getElementById('sidebar');
+        const menuToggle = document.getElementById('menu-toggle');
+        const closeSidebar = document.getElementById('close-sidebar');
+        const mobileOverlay = document.getElementById('mobile-overlay');
+
+        function toggleMenu() {
+            sidebar.classList.toggle('-translate-x-full');
+            mobileOverlay.classList.toggle('hidden');
+            document.body.classList.toggle('overflow-hidden');
+        }
+
+        menuToggle.addEventListener('click', toggleMenu);
+        closeSidebar.addEventListener('click', toggleMenu);
+        mobileOverlay.addEventListener('click', toggleMenu);
+    </script>
+
+    <!-- Round Favicon via Canvas -->
+    <script>
+        (function () {
+            var img = new Image();
+            img.src = 'fav.png?v=' + new Date().getTime();
+            img.onload = function () {
+                var size = 64;
+                var canvas = document.createElement('canvas');
+                canvas.width = size;
+                canvas.height = size;
+                var ctx = canvas.getContext('2d');
+                ctx.beginPath();
+                ctx.arc(size / 2, size / 2, size / 2, 0, Math.PI * 2, true);
+                ctx.closePath();
+                ctx.clip();
+                ctx.drawImage(img, 0, 0, size, size);
+                var link = document.querySelector("link[rel='icon']") || document.createElement('link');
+                link.rel = 'icon';
+                link.href = canvas.toDataURL('image/png');
+                document.head.appendChild(link);
+            };
+        })();
+    </script>
+</body>
+</html>
